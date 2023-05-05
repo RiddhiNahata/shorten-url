@@ -14,7 +14,7 @@ type Config struct {
 }
 
 func LoadConfig() (c Config, err error) {
-	// pick up envoirement varibales from OS env
+	// pick up environment varibales from OS env
 	viper.AddConfigPath("./")
 	viper.SetConfigName(".env")
 	viper.SetConfigType("env")
